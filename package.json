@@ -1,4 +1,5 @@
 {
+  "homepage": "http://kitharvey.github.io/Figma-Assignment",
   "name": "assignment-sponsorlytix",
   "version": "0.1.0",
   "private": true,
@@ -7,12 +8,15 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "apexcharts": "^3.19.3",
+    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-apexcharts": "^1.3.7",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
