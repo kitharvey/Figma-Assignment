@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Figma-Assignment/static/css/main.ab115176.chunk.css",
+    "main.js": "/Figma-Assignment/static/js/main.e8d6c480.chunk.js",
+    "main.js.map": "/Figma-Assignment/static/js/main.e8d6c480.chunk.js.map",
+    "runtime-main.js": "/Figma-Assignment/static/js/runtime-main.24f986d3.js",
+    "runtime-main.js.map": "/Figma-Assignment/static/js/runtime-main.24f986d3.js.map",
+    "static/js/2.9dee396d.chunk.js": "/Figma-Assignment/static/js/2.9dee396d.chunk.js",
+    "static/js/2.9dee396d.chunk.js.map": "/Figma-Assignment/static/js/2.9dee396d.chunk.js.map",
+    "index.html": "/Figma-Assignment/index.html",
+    "precache-manifest.0dabf9f9d690237c29da102baf6ee1a1.js": "/Figma-Assignment/precache-manifest.0dabf9f9d690237c29da102baf6ee1a1.js",
+    "service-worker.js": "/Figma-Assignment/service-worker.js",
+    "static/css/main.ab115176.chunk.css.map": "/Figma-Assignment/static/css/main.ab115176.chunk.css.map",
+    "static/js/2.9dee396d.chunk.js.LICENSE.txt": "/Figma-Assignment/static/js/2.9dee396d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24f986d3.js",
+    "static/js/2.9dee396d.chunk.js",
+    "static/css/main.ab115176.chunk.css",
+    "static/js/main.e8d6c480.chunk.js"
+  ]
+}
