@@ -1,14 +1,11 @@
 import React from 'react';
-import './css/style.css';
-import GlobalRanking from './FigmaChart/GlobalRanking'
-import VAI from './FigmaChart/VAI'
+import PartnerCard from './FigmaChart/PartnerCard'
 
 
 const App = () => {
   return (
     <div className="App">
-      <GlobalRanking />
-      <VAI />
+      <PartnerCard />
     </div>
   );
 }

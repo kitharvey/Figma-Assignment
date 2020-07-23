@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sarala:wght@400;700&display=swap");
+
+.part-wrap {
+  border-radius: 14px;
+  margin: 20px auto;
+  padding: 10px;
+  height: 651px;
+  width: 352px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+@mixin toolTipAngle ($angle, $marginLeft){
+  background-color: #FFFFFF;
+  position: absolute;
+  min-width: 80px;
+  width: max-content;
+  z-index: 10;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+
+  &:before, &:after{
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 5px solid transparent;
+    top: 70%;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate($angle);
+  }
+
+  &:before{
+    border-top: 50px solid rgba(0, 0, 0, 0.25);
+    margin-top: 1px;
+    margin-left: $marginLeft;
+    z-index: -1;
+  }
+
+  &:after{
+    border-top: 50px solid #FFFFFF;
+    z-index: 1;
+  }
+
+  &-text{
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 100;
+  }
+}
+
+.ch-par {
+  height: 300px;
+  width: auto;
+  margin-top: 20px;
+  position: relative;
+  .tool-tip{
+    opacity: 0;
+    transition: all 250ms ease;
+
+    &-one{
+      top: 20px;
+      left: 10px;
+      @include toolTipAngle (-45deg, -9px)
+    }
+    &-two{
+      top: 20px;
+      right: 0px;
+      @include toolTipAngle (45deg, -11px)
+    }
+    &-three{
+      bottom: 100px;
+      right: 80px;
+      @include toolTipAngle (45deg, -11px)
+    }
+    &-four{
+      top: 110px;
+      left: 70px;
+      @include toolTipAngle (-45deg, -9px)
+    }
+  
+  }
+  &:hover .tool-tip{
+    opacity: 1;
+  }
+}
+
+.part-det-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 60px;
+  padding: 10px;
+}
+.part-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 20px;
+}
+.part-circ {
+  height: 14px;
+  width: 14px;
+  border: 2px solid rgb(218, 56, 18);
+  border-radius: 50%;
+  align-self: center;
+  padding: 0;
+  margin-right: 7px;
+}
+.part-circ2 {
+  height: 14px;
+  width: 14px;
+  border: 2px solid rgb(18, 146, 25);
+  border-radius: 50%;
+  align-self: center;
+  padding: 0;
+  margin-right: 7px;
+}
+.part-circ3 {
+  height: 14px;
+  width: 14px;
+  border: 2px solid rgb(249, 154, 2);
+  border-radius: 50%;
+  align-self: center;
+  padding: 0;
+  margin-right: 7px;
+}
+.part-circ4 {
+  height: 14px;
+  width: 14px;
+  border: 2px solid rgb(47, 105, 204);
+  border-radius: 50%;
+  align-self: center;
+  padding: 0;
+  margin-right: 7px;
+}
+.part-me {
+  display: flex;
+}
+
+.part-text {
+  font-size: 14px;
+  font-family: "Sarala", sans-serif;
+}
+.p-percent {
+  font-size: 14px;
+  font-family: "Sarala", sans-serif;
+}
+
+.path5 {
+  height: 16px;
+  width: 18px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.nine5 {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.vie5 {
+  cursor: pointer;
+  font-size: 10px;
+  color: #495057;
+  font-weight: bold;
+}
+
+.vPopUp{
+  height: 16px;
+  width: 16px;
+  background: #E9E9E9;
+  border: 0.3px solid #B9B9B9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.vHead{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  .vTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .vTone {
+      margin: 0;
+      margin-right: 5px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: #495057;
+    }
+  }
+}
+
+.vWeek{
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 0.6px solid #D5D5D5;
+  padding: 0 10px;
+  background: #FCFDFD;
+  &:hover{
+    background: #ECEDED;
+  }
+
+  .vWone{
+    color: #999999;
+    background: transparent;
+    align-items: center;
+    font-family: Sarala;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: right;
+    outline: none;
+    border: none;
+  }
+}
+
+.apexcharts-tool-tip {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  min-width: 60px;
+}
