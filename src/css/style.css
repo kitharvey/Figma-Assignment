@@ -138,9 +138,10 @@
 
 body {
   background-color: #E5E5E5;
-  height: 100ch;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   width: 100%;
   padding: 10px;
-  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

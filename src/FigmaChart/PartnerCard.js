@@ -46,7 +46,7 @@ export default class PartnerCard extends Component {
       // Apexcharts custom tooltip
       tooltip: {
         // set true to exnable
-        enabled: false,
+        enabled: true,
         custom: function({series, seriesIndex, w}) {
           return ('<div class="apexcharts-tool-tip">' +
             '<div>' + w.globals.labels[seriesIndex] + '</div>' + 
@@ -57,7 +57,7 @@ export default class PartnerCard extends Component {
       },
 
       colors: ["#2F69CC", "#F99A02", "#129219", "#DA3812"],
-      labels: ["ROI", "VAI", "Total Investment", "Total Value"],
+      labels: ["Total Value", "Total Investment", "VAI", "ROI"],
 
       responsive: [
         {
